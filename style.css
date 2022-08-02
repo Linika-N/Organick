@@ -1,0 +1,791 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Yellowtail', cursive;*/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font: 400 1.9rem 'Roboto', sans-serif;
+    color:#274C5B;
+}
+h1{
+    font:700 7rem 'Roboto', sans-serif;  
+}
+h2{
+    font: 700 4.5rem 'Roboto', sans-serif;
+    margin: 0;
+}
+h3{
+    font: italic 3.6rem 'Yellowtail', cursive;  
+    color: #7EB693;
+    margin: 0;
+}
+h4{
+    font: normal 2.5rem 'Roboto', sans-serif;
+}
+/*Header style start*/
+.header{
+    position: fixed;
+    top: 0;
+    width: 1440px;
+    z-index: 999;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    transition: .2s linear;
+}
+.sticky_header{
+    background-color: #FFF;
+    opacity: 80%;
+}
+.logotype{
+    margin-right: 120px;
+}
+.menu{
+    display: flex;
+    margin: auto 0;
+    text-align: left;
+}
+.menu_items{
+    display: flex;
+    margin: auto 0;
+    justify-content: space-between;
+}
+.menu_items li{
+    list-style: none;
+    margin-right: 40px;
+}
+.menu_items li a{
+    text-decoration: none;
+    color: #274C5B;
+}
+.menu_items li:last-child{
+    margin-left: 1.39vw;
+}
+.menu_items li a:active, .menu_items li a:hover, .menu_items li a:focus{
+    outline: none;
+    color: #7EB693;
+}
+.shopping_cart{
+    position: relative;
+    top: 0;
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #D4D4D4;
+    border-radius: 33px;
+    width: 159px;
+}
+.cart{
+    margin: auto 0;
+    font-size: 1.7rem;
+}
+.counter{
+    margin: auto 0;
+    margin-right: 19px;
+    font-size: 1.8rem;
+}
+/* Header style end*/
+/*Body style start*/
+.made_with_nature{
+    margin-top: 120px;
+    background: url(images/background_first.jpg);
+    background-size: contain;
+    height: 913px;
+    padding-top: 220px;
+    padding-left: 30px;
+}
+.made_with_nature h1{
+    width: 496px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+.made_with_nature a{
+    text-decoration: none;
+    color: #274C5B;
+}
+.explore_button a:active, .explore_button a:focus, .explore_button a:hover{
+    opacity: 90%;
+    border: 2px solid teal;
+    outline: none;
+}
+.explore_button a{
+    display: flex;
+    width: 219px;
+    padding: 25px 9px;
+    background-color:#EFD372; 
+    border: 1px solid #EFD372;
+    border-radius: 16px;
+}
+.explore_button p{
+    margin: auto 24px;
+}
+.button_arrow{
+    padding: 11px;
+    border-radius: 50px;
+    background-color: #335B6B ;
+}
+.fruits_vegetables{
+    padding: 140px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.fruits{
+    color: white;
+    background-image: url(images/fruits_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 30px;
+}
+.fruits h3{
+    color: white;
+}
+.fruits p, .vegetables p{
+    font-size: 40px;
+}
+.vegetables{
+    background-image: url(images/vegetables_background.jpg);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    background-size: 100% 100%;
+
+}
+.fruits, .vegetables{
+    padding: 105px 55px;
+    height: 26.25%;
+    width: 46.18%;
+    text-decoration: none;
+}
+.fruits:hover, .fruits:focus, .fruits:active, .vegetables:hover, .vegetables:focus, .vegetables:active{
+    border: 4px solid teal;
+    opacity: 80%;
+}
+.about_us{
+    display: flex;
+    background-color: #F9F8F8;
+    padding: 130px 30px;
+}
+.about_us_picture{
+    margin-right: 20px;
+}
+.about_us_items p{
+    margin: 22px 0 30px 0;
+}
+.about_us_items1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #525C60;
+}
+.about_us_itemsdown{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    margin-bottom: 50px;
+}
+.about_us_itemsdown h4{
+    margin-bottom: 9px;
+}
+.about_us_itemsdown1{
+    margin-bottom: 30px;
+}
+.shop_now a:active, .shop_now a:focus, .shop_now a:hover{
+    background-color: #0f6283;
+    outline: none;
+}
+.shop_now a{
+    display: flex;
+    width: 199px;
+    padding: 25px 9px;
+    background-color:#274C5B; 
+    border: 1px solid #274C5B;
+    border-radius: 16px;
+    text-decoration: none;
+}
+.shop_now p{
+    margin: auto 24px;
+    color: white;
+}
+.button_arrow{
+    padding: 11px;
+    border-radius: 50px;
+    background-color: #335B6B ;
+}
+.our_products{
+    padding: 120px 0;
+}
+.our_products h2,.our_products h3{
+    text-align: center;
+}
+.our_products h2{
+    margin-bottom: 22px;
+}
+.our_products_items{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.our_products_item{
+    padding: 30px;
+    background: #F9F8F8;
+    border-radius: 30px;
+}
+.type{
+    background: #274C5B;
+    color: white;
+    padding: 5px 20px;
+    font: 700 15px 'Open Sans', sans-serif;
+    width: 118px;
+    border-radius: 8px;
+}
+.product_picture{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.name{
+    font: 400 22px 'Roboto', sans-serif;
+}
+.our_products_item hr{
+    margin: 10px 0;
+    border-top: 1px solid #D4D4D4;
+    border-bottom: 0;
+}
+.underline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+}
+.oldprice::before, .currentprice::before{
+    content: '$ ';
+}
+.oldprice::after, .currentprice::after{
+    content: ' USD';
+}
+.oldprice{
+    font:400 17px 'Open Sans', sans-serif;
+    color: #B8B8B8;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.currentprice{
+    font: 700 18px 'Open Sans', sans-serif;
+}
+.gradestar{
+    background-image: url(images/star1.svg);
+}
+.testimonial{
+    background-image: url(images/testimonial_bg.jpg);
+    padding: 130px 170px;
+}
+.testimonial h2, .testimonial h3{
+    text-align: center;
+}
+.testimonial h3{
+    margin-bottom: 18px;
+}
+.review{
+    margin: 60px 0;
+    text-align: center;
+}
+.customerfoto{
+    margin-bottom: 18px;
+}
+.customergrade{
+    height: 27px;
+    margin-bottom: 30px;
+}
+.customergrade_star{
+    background-image: url(images/star1.svg);
+}
+.customerreview{
+    font: 400 18px 'Open Sans', sans-serif;
+    margin-bottom: 23px;
+}
+.customername{
+    font: 700 26px 'Roboto', sans-serif;
+    margin-bottom: 11px;
+}
+.customerabout{
+    font: 400 14px 'Open Sans', sans-serif;
+}
+.testimonial hr{
+    margin: 80px 67px 100px 67px;
+    height: 2px;
+    background-color: #E0E0E0;
+}
+.organick_in_numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.organick_in_numbers_item{
+    width: 250px;
+}
+.circle_out{
+    height: 250px;
+    border-radius: 200px;
+    border: 6px solid #7EB693;
+}
+.circle_in{
+    height: 240px;
+    border-radius: 200px;
+    border: 5px solid #FFF;
+    background-color: #F1F1F1;
+}
+.circle_in_text{
+   margin: 74px 0; 
+}
+.numbers{
+    font: 700 4.2rem 'Roboto', sans-serif;
+    text-align: center;
+}
+.organick_in_numbers_title{
+    font: 700 1.8rem 'Open Sans', sans-serif;
+    text-align: center;
+}
+.offer_products{
+    padding: 139px 30px;
+    background-color: #274C5B;
+}
+.offer_products_up{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.offer_products_title h2{
+    color: #FFF;
+    height: 59px;
+}
+.offer_products_button{
+    width: 267px;
+    margin: auto 0;
+}
+.allproducts_button a:active, .allproducts_button a:focus, .allproducts_button a:hover{
+    border: 2px solid teal;
+    opacity: 90%;
+    outline: none;
+}
+.allproducts_button a{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 9px;
+    background-color:#EFD372; 
+    border: 1px solid #EFD372;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #274C5B;
+}
+.allproducts_button p{
+    font-size: 20px;
+    margin: auto 24px;
+}
+.offer_products_items{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%,1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.offer_products_item{
+    padding: 30px;
+    background: #F9F8F8;
+    border-radius: 30px;
+}
+.opi_type{
+    background: #274C5B;
+    color: white;
+    padding: 5px 20px;
+    font: 700 15px 'Open Sans', sans-serif;
+    width: 118px;
+    border-radius: 8px;
+}
+.opi_name{
+    font: 400 2.2rem 'Roboto', sans-serif;
+}
+.offer_products_item hr{
+    margin: 10px 0;
+    border-top: 1px solid #D4D4D4;
+    border-bottom: 0;
+}
+.opi_underline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.opi_prices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.opi_oldprice::before, .opi_currentprice::before{
+    content: '$ ';
+}
+.opi_oldprice::after, .opi_currentprice::after{
+    content: ' USD';
+}
+.opi_oldprice{
+    font:400 17px 'Open Sans', sans-serif;
+    color: #B8B8B8;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.opi_currentprice{
+    font: 700 18px 'Open Sans', sans-serif;
+}
+.opi_gradestar{
+    background-image: url(images/star1.svg);
+}
+.eco_friendly{
+    padding: 40px 60px;
+    background: url(images/eco_friendly.jpg) no-repeat;
+    background-size: 50%;
+}
+.eco_friendly_item{
+    background-color: #fff;
+    margin-left: 41.7%;
+    padding: 40px 40px 40px 60px;
+    border-radius: 30px 0 0 30px;
+}
+.eco_friendly_item h2{
+    margin-bottom: 30px;
+}
+.eco_friendly_item_advicetitle{
+    font: 700 2.3rem 'Roboto', sans-serif;
+    line-height: 32.2px;
+}
+.eco_friendly_item_advice{
+    font: 400 1.8rem 'Open Sans',sans-serif;
+    color: #525C60;
+    line-height: 32.4px;
+    margin-bottom: 15px;
+}
+.organick_typeofproducts{
+    background-color:#EFF6F1;
+    padding: 140px 0;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(30%,1fr));
+    gap: 30px;
+    margin-bottom: 70px;
+}
+.fruit_juice, .organic_food, .nuts_cookies{
+    height: 580px;
+    padding: 242px 0;
+    text-align: center;
+}
+.fruit_juice{
+    background-image: url(images/organick_top_fruitjuice.jpg);
+}
+.organic_food{
+    background-image: url(images/organick_top_organicfood.jpg);
+}
+.nuts_cookies{
+    background-image: url(images/organick_top_nutscookies.jpg);
+}
+.fruit_juice_title, .organic_food_title, .nuts_cookies_title{
+    background-color: #fff;
+    max-width: 313px;
+    border-radius: 20px;
+    padding: 30px 80px;
+    margin: 0 auto;
+    font: 700 25px 'Roboto', sans-serif;
+}
+.fruit_juice:active, .organic_food:active, .nuts_cookies:active, .fruit_juice:focus, .organic_food:focus, .nuts_cookies:focus,.fruit_juice:hover, .organic_food:hover, .nuts_cookies:hover{
+    border: 4px solid teal;
+}
+.news{
+    margin: 60px 30px;
+}
+.news_header_items{
+    display: flex;
+    justify-content: space-between;
+}
+.news_header_item h3{
+    margin-bottom: 10px;
+    max-width: 1101px;
+}
+.news_header_button{
+    width: 14.58vw;
+    margin: 45px 10px;
+}
+.news_header_button a:active, .news_header_button a:focus, .news_header_button a:hover{
+    background-color: teal;
+}
+.news_header_button a{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 9px;
+    background-color:white; 
+    border: 1px solid #274C5B;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #274C5B;
+}
+.news_header_button p{
+    font-size: 20px;
+    margin: auto 24px;
+}
+.news_body{
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(46.52%,1fr));
+    gap: 30px;
+}
+.news_body_item{
+    margin-bottom: 46px;
+    position: relative;
+}
+.news_bg{
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 228px;
+}
+.news_content{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 18px rgba(0,0,0, 14%);
+    padding: 50px;
+    background: white;
+}
+.journalist_data{
+    font-size: 17px;
+    margin-bottom: 13px;
+    display: flex;
+}
+.journalist_data img{
+    margin-right: 10px;
+}
+.journalist_name{
+    margin-top: 3px;
+}
+.news_title{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 38px;
+}
+.news_text{
+    font: 400 18px 'Open Sans', sans-serif;
+    margin-bottom: 13px;
+    color: #525C60;
+}
+.news_button{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.news_button img{
+    margin-left: 10px;
+}
+.news_button:active, .news_button:focus, .news_button:hover{
+    margin-left: 10px;
+}
+.subscribe{
+    margin: 50px 30px;
+    border-radius: 30px;
+    background: url(images/subscribe_bg.jpg) no-repeat;
+    padding: 70px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe_title{
+    font: 700 5rem 'Roboto', sans-serif;
+    color: white;
+}
+.subscribe_form{
+    padding: 18px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.email_address{
+    margin-right: 10px;
+    padding: 26px 30px;
+    border-radius: 16px;
+    width: 24.30vw;
+    font: 400 18px 'Open Sans', sans-serif;
+    color: #525C60;
+    border: none;
+}
+.subscribe_button a:active, .subscribe_button a:focus, .subscribe_button a:hover{
+    background-color: #0f6283;
+    outline: none;
+}
+.subscribe_button{
+    display: flex;
+    font: 700 1.8rem 'Open Sans', sans-serif;
+    width: 13.68vw;
+    padding: 25px 9px;
+    background-color:#274C5B; 
+    border: 1px solid #274C5B;
+    border-radius: 16px;
+    text-decoration: none;
+}
+.subscribe_button p{
+    margin: auto 24px;
+    color: white;
+    font: 700 18px 'Open Sans', sans-serif;
+}
+.subscribe_button_arrow{
+    padding: 11px;
+    border-radius: 50px;
+    background-color: #335B6B ;
+}
+.footer{
+    font: 400 18px 'Open Sans', sans-serif;
+    color: #525C60;
+}
+.footer h2{
+    color: #274C5B;
+}
+.footer_up{
+    padding: 130px 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.footer_up h2{
+    font-size: 30px;
+}
+.contact_us{
+    text-align: right;
+}
+.contact_us h2{
+    margin-bottom: 35px;
+}
+.contact_data div:nth-child(odd){
+    font-weight: 700;
+}
+.contact_data div:nth-child(even){
+    margin-bottom: 40px;
+}
+.organick_slogan{
+    margin: 0 20px;
+    text-align: center;
+    border-left: 1px solid #D5D5D5;
+    border-right: 1px solid #D5D5D5;
+    padding: 0 51px;
+}
+.organick_slogan img{
+    margin-bottom: 44px;
+}
+.text{
+    margin-bottom: 50px;
+}
+.social_media a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.social_media a:active, .social_media a:focus, .social_media a:hover{
+    border: 1px solid #274C5B;
+    border-radius: 50%;
+}
+.utility_pages h2{
+    margin-bottom: 20px;
+}
+.utility_pages ul li{
+    margin-bottom: 24px;
+}
+.utility_pages a{
+    text-decoration: none;
+    color: #525C60;
+}
+.utility_pages a:active, .utility_pages a:focus, .utility_pages a:hover{
+    color: #1d86af;
+}
+.footer_down{
+    padding: 25px 30px;
+    text-align: center;
+    border-top: 1px solid #D5D5D5;
+}
+@media screen and (max-width: 1024px) {
+    .menu{
+        margin-right: 0;
+    }
+    .logotype{
+        margin-right: 30px;
+    }
+    .fruits, .vegetables{
+        height: 250px;
+        padding: 50px 55px;
+    }
+    .about_us{
+        padding: 10px 30px;
+    }
+    .about_us_picture{
+        width: 50%;
+    }
+    .about_us_itemsdown{
+        margin-bottom: 0;
+    }
+    .our_products_items{
+        grid-template-columns: repeat(2,447px);
+    }
+    .circle_out{
+        height: 150px;
+    }
+    .circle_in{
+        height: 140px;
+    }
+    .circle_in_text{
+        margin-top: 15px;
+    }
+    .offer_products{
+        padding: 50px 30px;
+    }
+    .eco_friendly{
+        padding: 0 60px;
+    }
+    .eco_friendly_item{
+        padding: 20px 40px;
+    }
+    .eco_friendly_item h2, .eco_friendly_item h3{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .eco_friendly_item_advicetitle{
+        font-size: 1.8rem;
+    }
+    .eco_friendly_item_advice{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .news_header_item h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .news_header_button{
+        margin: 20px 10px;
+    }
+    .news_header_button p{
+        font-size: 16px;
+    }
+    .news_header_button a{
+        padding: 9px;
+    }
+    .subscribe_title{
+        font-size: 40px;
+    }
+    .email_address{
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .subscribe_button p{
+        font-size: 14px;
+        margin: auto 10px;
+    }
+    .footer_up{
+        padding: 50px 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
